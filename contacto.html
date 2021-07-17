@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseño.css">
+    <title>Contacto - /PfZ/ pedales</title>
+</head>
+<body>
+    <h2>Contactate con nosotros!</h2>
+    
+        <fieldset id=formulariocontacto class="formularioDeContacto"><leyend for=formulariocontacto>Formulario de contacto</leyend>
+
+            <form>
+                <div>
+                    <label for="nombre">Indicá tu nombre completo</label>
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido">
+                </div>
+
+                <div>
+                    <label for="email">Indicá un e-mail para que nos contactemos con vos</label>
+                    <input type="email" name="email" placeholder="E-Mail">
+                </div>
+
+                <div>
+                    <label for="motivo">Por qué razón deseas contactarte?</label>
+
+                    <input type="radio" id="clo" name="motivo" value="comprarProductos">
+                    <label for="clo">Clones - Custom Shop</label>
+                    <input type="radio" id="cl" name="motivo" value="clases">
+                    <label for="cl">Clases de armado de pedales</label>
+                    <input type="radio" id="st" name="motivo" value="soporteTecnico">
+                    <label for="st">Soporte Técnico</label>
+                    <input type="radio" id="vm" name="motivo" value="ventaMayorista">
+                    <label for="vm">Venta Mayorista</label>
+                    <input type="radio" id="otro" name="motivo" value="otro">
+                    <label for="otro">Otro</label>
+                </div>
+
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" cols=16 rows=8 placeholder="Escribí lo que nos quieras consultar acá!"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+                
+                <div>
+                    <input type="reset" value="Limpiar">
+                </div>
+                
+
+            </form>
+
+        </fieldset>
+        <p><a href=index.html>Volver al inicio</a></p>
+</body>
+</html>
