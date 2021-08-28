@@ -1,0 +1,76 @@
+/* Cambios en el carousel y definición de carusel-alt para la version mobile */
+
+.carousel {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+.carousel-inner{
+background-color: gainsboro;
+}
+.carrouselImage{
+min-height: 30vw;
+max-height: 30vw;
+max-width: 35vw;
+
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.521) ;
+}
+
+.carousel-caption h5 {
+    color: $coloracento--masfuerte;
+}
+
+
+.carousel-alt {
+    display: none;
+    img {
+    max-width: 80%;
+    max-height: 50vh;
+    margin: 0.5rem;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .carousel {
+        display: none;
+    }
+
+    .carousel-alt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Cambios en el navbar*/
+
+
+.navbar a {
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: rgb(78, 78, 78);
+    width: inherit;    
+}
+
+.menu-last {
+    border-style: hidden; 
+}
+
+
+
+@media (max-width: 991px) {
+    .navbar-collapse{
+        background-color: rgb(53, 53, 53);
+        ul {
+            li{
+                border-bottom-style: solid;
+                border-bottom-color: grey;
+            }
+        }
+    }
+}
